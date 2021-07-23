@@ -311,6 +311,6 @@ psycho.run_until_disconnected()
 # || PsychoBots || #
 # © BY @Alone_loverboy
 # For Own PsychoBots 
-# Telethon
+# Telethon Library
 # Python3 
 # Kanger = Gay
