@@ -1,2 +1,2 @@
-worker: python3 -m yt.py
+worker: python3 -m bot.py
 
