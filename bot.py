@@ -174,7 +174,7 @@ def time_formatter(milliseconds: int) -> str:
     return tmp[:-2]
 
 
-@psycho.on(events.NewMessage(pattern="/yt(audio|video)"))
+@psycho.on(events.NewMessage(pattern="/yt(a|v)"))
 async def download_video(v_url):
     """ For .ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
@@ -182,7 +182,7 @@ async def download_video(v_url):
 
     await eor(v_url, "`Preparing to download...`")
 
-    if type == "audio":
+    if type == "a":
         opts = {
             "format": "bestaudio",
             "addmetadata": True,
@@ -205,7 +205,7 @@ async def download_video(v_url):
         video = False
         song = True
 
-    elif type == "video":
+    elif type == "v":
         opts = {
             "format": "best",
             "addmetadata": True,
