@@ -24,7 +24,7 @@ psycho = TelegramClient('ytvideo', API_ID, API_HASH).start(bot_token=TOKEN)
 # startup # above #
 
 
-@psycho.on(events.NewMessage(pattern="^/yt(audio|video) (.*)"))
+@psycho.on(events.NewMessage(pattern="^/yt(audio|video)"))
 async def download_video(v_url):
     """ For .ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
