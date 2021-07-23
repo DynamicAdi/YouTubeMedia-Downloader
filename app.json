@@ -1,0 +1,51 @@
+{
+  "name": "YouTube Downloader",
+  "description": "A simple Bot to download YouTube Media",
+  "logo": "https://telegra.ph/file/a0f8de2ef7c7778e5c509.jpg",
+  "keywords": [
+    "telegram",
+    "youtube",
+    "downloader"
+  ],
+    "success_url": "https://github.com/loverboyXD",
+  "repository": "https://github.com/PsychoBots/YouTubeMedia-Downloader",
+  "env": {
+    "WEBHOOK": {
+      "description": "Leave this as it is!",
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "Get from my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "u kknow",
+      "value": ""
+    },
+    "TOKEN": {
+      "description": "Thats also u know bro😂",
+      "value": ""
+    }
+},
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+        "options": {
+          "version": "12"
+        }
+      }
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
