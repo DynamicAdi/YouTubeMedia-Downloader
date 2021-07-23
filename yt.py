@@ -3,7 +3,7 @@ import time
 from telethon import TelegramClient 
 from telethon import events 
 from telethon.tl.types import DocumentAttributeAudio
-from config import config
+from config import *
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import (
     ContentTooShortError,
