@@ -4,3 +4,4 @@ API_HASH = os.environ.get("API_HASH")
 TOKEN = os.environ.get("TOKEN")
 
 # Kanger = Gay
+# Kang = Madarchod
